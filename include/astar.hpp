@@ -6,6 +6,7 @@
 #include <optional>
 #include <algorithm>
 #include <limits>
+printf("%s\n" test);
 
 template <typename Node,
           typename Hash = std::hash<Node>,
