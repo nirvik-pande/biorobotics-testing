@@ -6,13 +6,6 @@ Personal repo for implementing and testing pathfinding algorithms for the CMU Bi
 
 - **AStar/** – A* search implementation
 - **CBS/** – Conflict-Based Search (multi-agent pathfinding)
-  - `cbs.h` / `low_level.h` – CBS solver and low-level planner
-  - `astar.h` – A* used as the low-level search
-  - `graph.h` / `grid.h` – Graph and grid representations
-  - `common.h` – Shared types and utilities
-  - `main.cpp` – Entry point
-  - `stress_test.cpp` – Stress testing CBS performance
-  - `CMakeLists.txt` – Build config
 
 ## Build (CBS)
 
