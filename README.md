@@ -1,21 +1,35 @@
-# Biorobotics Lab – Test Files
+# Biorobotics Lab – Testing
 
-Personal workspace for testing and prototyping code related to the CMU Biorobotics Lab.
+Personal repo for implementing and testing pathfinding algorithms for the CMU Biorobotics Lab.
 
-## What's Here
+## Structure
 
-- Experiment scripts, scratch files, and one-off tests
-- Nothing here is production or guaranteed to run cleanly
+- **AStar/** – A* search implementation
+- **CBS/** – Conflict-Based Search (multi-agent pathfinding)
+  - `cbs.h` / `low_level.h` – CBS solver and low-level planner
+  - `astar.h` – A* used as the low-level search
+  - `graph.h` / `grid.h` – Graph and grid representations
+  - `common.h` – Shared types and utilities
+  - `main.cpp` – Entry point
+  - `stress_test.cpp` – Stress testing CBS performance
+  - `CMakeLists.txt` – Build config
 
-## Usage
-
-Files are standalone unless noted otherwise. Run individually:
+## Build (CBS)
 
 ```bash
-python <filename>.py
+cd CBS/build
+cmake ..
+make
+```
+
+## Run
+
+```bash
+./cbs          # normal run
+./stress_test  # stress test
 ```
 
 ## Notes
 
-- This repo is for personal development/testing only
-- Not representative of official lab work or publications
+- Personal testing workspace, not official lab code
+- C++ with CMake build system
